@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API GAME OF THRONES</title>
+    <title onclick="stop()">API GAME OF THRONES</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <ul id="people"></ul>
-        <script src="index.js"></script>
-    </div>
+    <header>
+        <img onclick="stop()" src="./images/logo.jpg" alt="got logo">
+    </header>
+    <main>
+        <audio src="./game of thrones theme.mp3" controls></audio>
+        <input id="searchBar" onclick="playSound()" placeholder="Enter a character name">
+        <div class="container">
+            <ul id="people"></ul>
+            <script src="index.js"></script>
+        </div>
+    </main>
 </body>
 </html>
