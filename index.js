@@ -24,7 +24,7 @@ function display(array) {
 searchBar.addEventListener('keyup', (event) => {
     let input = event.target.value.toLowerCase();
     const filter = charArray.filter(noms => {
-        return noms.aliases.toLowerCase().includes(input)
+        return noms.aliases[0].toLowerCase().includes(input)
     })
     display(filter)
 })
